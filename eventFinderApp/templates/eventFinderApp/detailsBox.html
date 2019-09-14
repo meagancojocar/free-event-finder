@@ -4,7 +4,7 @@
         <p>{{ event.start_time }}</p>
         {% for category in event.categories.all %}
             {{ category.name }}
-            {% if not forloop.first %}
+            {% if not forloop.last %}
                 ,
             {% endif %}
         {% endfor %}

@@ -8,6 +8,11 @@
 <p>Starts at: {{ event.start_time }}</p>
 <p>Ends at: {{ event.end_time }}</p>
 <p>{{ event.venue }}</p>
-
+<p>{% for category in event.categories.all %}
+            {{ category.name }}
+            {% if not forloop.last %}
+                ,
+            {% endif %}
+        {% endfor %}<p>
 
 {% endblock %}
