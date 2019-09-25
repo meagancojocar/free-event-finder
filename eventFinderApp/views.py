@@ -26,5 +26,5 @@ def account(request):
 class EventCreate(generic.edit.CreateView):
     form_class = EventForm
     template_name = 'eventFinderApp/form.html'
-    success_url = reverse_lazy('eventFinderApp:index.html')
+    success_url = reverse_lazy('eventFinderApp:index')
 
