@@ -18,5 +18,4 @@ class Logout(LogoutView):
   pass
 
 
-
   
