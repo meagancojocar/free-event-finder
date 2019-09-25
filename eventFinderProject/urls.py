@@ -19,9 +19,11 @@ from rest_framework import routers
 from eventFinderApp import viewsets
 import users
 from rest_framework.authtoken import views
+from users import viewsets as UserViewsets
 
 router = routers.DefaultRouter()
 router.register(r'events', viewsets.EventViewSet)
+router.register(r'users', UserViewsets.CustomUserViewSet)
 
 urlpatterns = [
     path('event-finder/', include('eventFinderApp.urls')),
