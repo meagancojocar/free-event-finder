@@ -155,8 +155,8 @@ if 'S3_BUCKET' in os.environ:
 
     # define the AWS S3 bucket to use for storage
     AWS_STORAGE_BUCKET_NAME = os.environ['S3_BUCKET']
-    AWS_DEFAULT_ACL = 'public-read
-    
+    AWS_DEFAULT_ACL = 'public-read'
+
 LOGIN_REDIRECT_URL = '/'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
